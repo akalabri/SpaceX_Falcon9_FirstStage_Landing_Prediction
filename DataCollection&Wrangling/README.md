@@ -27,6 +27,17 @@ Additionally, we will explore an alternative data source for Falcon 9 launch dat
 - Specifically, we will focus on the `PayloadMass` column, calculate the mean of the non-null values, and replace NULL values with the calculated mean.
 - The `LandingPad` column with NULL values will be left as is, as it indicates the absence of a landing pad.
 
+### Additional Attributes
+
+- The dataset includes various attributes, including Flight Number, Date, Booster version, Payload mass, Orbit, Launch Site, and more.
+- We will also consider attributes such as Grid Fins, Reused, Legs, Block, Reused count, Serial, Longitude, and Latitude of launch.
+
+### Outcome Classification
+
+- The `Outcome` column indicates if the first stage successfully landed. We will convert landing outcomes to binary classes:
+  - 0 represents a bad outcome (the booster did not land successfully).
+  - 1 represents a good outcome (the booster did land successfully).
+
 ## Future Analysis
 
 With a clean and well-structured dataset, we can perform various analyses and visualizations to gain insights into SpaceX launches. Potential future steps include:
@@ -53,7 +64,7 @@ By leveraging both API data and web scraping, we can create a comprehensive data
 
 ## Author
 
-[Aflah Al Abri]
+Aflah Al Abri
 
 ## License
 
